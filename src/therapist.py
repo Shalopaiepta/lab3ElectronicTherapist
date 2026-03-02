@@ -7,4 +7,8 @@ class Therapist:
         ]
     def ask_question(self, index: int) -> str:
         # todo: реализовать метод ask_question позднее до конца
-        return "У вас есть температура?"
+        if index == 0:
+            return self.questions[0]
+        if index == 1:
+            return self.questions[1]
+        return "Вопрос не найден"

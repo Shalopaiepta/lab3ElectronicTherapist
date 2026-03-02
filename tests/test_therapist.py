@@ -12,6 +12,11 @@ class TestTherapist(unittest.TestCase):
         result = therapist.ask_question(0)
         self.assertIsInstance(result, str)
         self.assertGreater(len(result), 0)
+    def test_ask_question_index_1(self):
+        therapist = Therapist()
+        result = therapist.ask_question(1)
+        self.assertIsInstance(result, str)
+        self.assertGreater(len(result), 0)
 
 
 if __name__ == '__main__':
